@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="cz.devconf2017">
+    package="cz.devconf">
 
     <uses-permission android:name="android.permission.VIBRATE"/>
     <application
@@ -10,20 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="cz.devconf2017.Splash">
+            android:name="cz.devconf.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="cz.devconf2017.MainActivity">
+        <activity android:name="cz.devconf.home.MainActivity">
         </activity>
-        <activity android:name="cz.devconf2017.SpeakerDetail"></activity>
-        <activity android:name="cz.devconf2017.TalkDetail"></activity>
-        <activity android:name="cz.devconf2017.VotingDetail"></activity>
+        <activity android:name="cz.devconf.SpeakerDetail"></activity>
+        <activity android:name="cz.devconf.TalkDetail"></activity>
+        <activity android:name="cz.devconf.VotingDetail"></activity>
         <service
-            android:name="cz.devconf2017.LocalFirebaseNotificationService">
+            android:name="cz.devconf.LocalFirebaseNotificationService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>
             </intent-filter>
